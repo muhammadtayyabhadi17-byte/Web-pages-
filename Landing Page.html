@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Tayyab Hadi — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #050505;
+  --surface: #0d0d0d;
+  --accent: #c8ff00;
+  --accent2: #00d4ff;
+  --text: #f0f0f0;
+  --muted: #555;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Syne', sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.hero {
+  text-align: center;
+  max-width: 900px;
+  padding: 40px;
+}
+
+.cv-card {
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+  border: 2px solid rgba(200,255,0,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 60px rgba(200,255,0,0.08);
+}
+
+.cv-initials {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.hero-label {
+  margin-top: 35px;
+  font-family: 'DM Mono', monospace;
+  color: var(--accent);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.hero-title {
+  margin-top: 16px;
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 0.95;
+  font-weight: 800;
+}
+
+.hero-title span {
+  color: var(--accent);
+}
+
+.hero-sub {
+  margin: 24px auto;
+  max-width: 700px;
+  line-height: 1.8;
+  color: #cccccc;
+  font-size: 1rem;
+}
+
+.skills {
+  margin-top: 30px;
+}
+
+.skills span {
+  display: inline-block;
+  margin: 8px;
+  padding: 12px 18px;
+  border: 1px solid rgba(200,255,0,0.3);
+  border-radius: 30px;
+  color: var(--accent);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.8rem;
+}
+
+.stats {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.stat-num {
+  color: var(--accent);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.stat-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 4px;
+}
+
+.badge {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 30px;
+  border: 1px solid rgba(200,255,0,0.3);
+  color: var(--accent);
+  font-family: 'DM Mono', monospace;
+}
+
+@media(max-width: 700px){
+  .hero {
+    padding: 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+
+<div class="cv-card">
+<span class="cv-initials">TH</span>
+</div>
+
+<div class="badge">● Open To Work</div>
+
+<p class="hero-label">DAE CIT Graduate & Data Analytics Learner</p>
+
+<h1 class="hero-title">
+Muhammad<br>
+<span>Tayyab Hadi.</span>
+</h1>
+
+<p class="hero-sub">
+Motivated Computer Information Technology graduate from Government College of Technology Bahawalpur with a 3-year DAE CIT qualification and a 3-month certification in Data Analytics. Passionate about experimental web development, lead generation, office management, hardware troubleshooting, software debugging, and building modern digital experiences.
+</p>
+
+<div class="skills">
+<span>Data Analytics</span>
+<span>Lead Generation</span>
+<span>Office Management</span>
+<span>Web Development</span>
+<span>Hardware Troubleshooting</span>
+<span>Software Debugging</span>
+</div>
+
+<div class="stats">
+  <div>
+    <div class="stat-num">3</div>
+    <div class="stat-label">Years DAE CIT</div>
+  </div>
+
+  <div>
+    <div class="stat-num">3 Month</div>
+    <div class="stat-label">Data Analytics</div>
+  </div>
+
+  <div>
+    <div class="stat-num">5+</div>
+    <div class="stat-label">Technical Skills</div>
+  </div>
+</div>
+
+</section>
+
+</body>
+</html>
